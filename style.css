@@ -15,3 +15,12 @@ a {
 span {
   background-color: blue;
 }
+.red {
+  color: red;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+#firstdiv {
+  color: rgb(213, 77, 179);
+}
