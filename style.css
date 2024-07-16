@@ -1,3 +1,17 @@
-body{
-    background-color: rgb(180, 145, 213);
+body {
+  background-color: rgb(180, 145, 213);
+}
+td {
+  border: 2px solid black;
+}
+
+p {
+  background-color: aquamarine;
+}
+
+a {
+  background-color: brown;
+}
+span {
+  background-color: blue;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms HTML</title>
+  </head>
+  <body>
+    <h1>Form to apply for the post of Software Engineer</h1>
+    <form action="post">
+      <div>
+        <label for="username">Enter your username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+      </div>
+
+      <div>
+        <label for="">Sex</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+        <label for="subscribe">Employed</label>
+      </div>
+
+      <div>
+        <label for="comment">Enter the Coverletter</label>
+        <br />
+        <textarea id="comment" name="comment" rows="4" cols="50"> </textarea>
+      </div>
+
+      <div>
+        <select name="Position">
+          <option value="intern">intern</option>
+          <option value="junior">junior</option>
+          <option value="senior">senior</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
