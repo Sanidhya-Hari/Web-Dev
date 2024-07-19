@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+  </head>
+  <style>
+    h1 {
+      background-color: rgb(227, 132, 132);
+    }
+    .bg {
+      background-color: rgb(130, 130, 245);
+    }
+    #bkgrnd{
+        background-color: greenyellow;
+    }
+    h1 > p{
+        background-color: pink;
+    }
+    *{
+        color: purple;
+    }
+    a:visited{
+        color: darkorange;
+    }
+    a:link{
+        color: red;
+    }
+    a:hover{
+        color: green ;
+    }
+
+  </style>
+  <body>
+    <h1>Element Selector</h1>
+    <h2 class="bg">Class Selector</h2>
+    <h2 id="bkgrnd">ID Selector</h2>
+    <h1>
+        Child Selector
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facilis totam beatae!</p>
+    </h1>
+    <h3><a href="https://www.youtube.com/watch?v=1cEG1T8beO4&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=17">SIGMA </a></h3>
+    
+  </body>
+</html>
