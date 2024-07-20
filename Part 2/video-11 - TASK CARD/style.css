@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 5px;
+  font-family: "Comic Neue", cursive;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.card {
+  background-color: yellow;
+  width: 200px;
+  height: 400px;
+  border: 5px solid yellowgreen;
+  border-radius: 10px;
+}
+.image {
+  padding: 5px 10px;
+}
+.image img {
+  border-radius: 10px;
+}
+.cont > p {
+  font-size: 12px;
+}
+.cont {
+  padding: 5px;
+}
+.cap {
+  padding: 0px 30px;
+}
+.cap.cap1 {
+  padding: 20px 55px;
+}
+.cap.cap1.span {
+  border: 2px solid yellowgreen;
+  padding: 10px 5px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  font-size: 13px;
+}
+.cap > span {
+  border: 2px solid yellowgreen;
+  padding: 2px 5px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  font-size: 13px;
+}
