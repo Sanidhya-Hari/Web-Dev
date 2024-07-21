@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+  </head>
+  <style>*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color:rgba(95, 95, 95, 0.838);
+    --seccolor:rgb(185, 185, 185);
+    --another-color:rgba(86, 84, 84, 0.779);
+    --decoration-color: rgba(20, 9, 9, 0.973);
+    --main-color:rgb(86, 84, 84);
+    --defpad:15px;
+    --defop:0.5;
+}
+body{
+    background-color: var(--seccolor);
+}
+.nav{
+    background-color: var(--color);
+}
+.nav li:hover{
+    background-color: var(--another-color);
+    cursor: pointer;
+    border-radius: 20px;
+    
+    
+}
+ul{
+    display: flex;
+}
+ul li{
+    color: white;
+    opacity: var(--defop);
+    list-style: none;
+    font-size: 25px;
+    margin: 10px;
+    padding: var(--defpad);
+}
+
+h1{
+    text-align: center;
+    color: var(--decoration-color);
+}
+.cont{
+    text-align: left;
+    margin: 23px 300px;
+    padding: var(--defpad);
+    font-style:inherit;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: 5px solid var(--main-color);
+    height: auto;
+    width: 50vw;
+    background-color: var(--another-color);
+    border-radius: 25px;
+}
+.cont p{
+    margin-top: 20px;
+}</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Careers</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="cont">
+        <h1>Sanidhya Hari Rastogi</h1>
+        <p>
+            I am Sanidhya Hari Rastogi, a highly motivated B.Tech graduate in Computer Science and Engineering from AKTU, actively seeking a challenging position to leverage my extensive technical expertise and practical experience. Proficient in programming languages such as C, C++, and Core Java, I have developed sophisticated web projects using HTML, CSS, JavaScript, and ReactJS. My skills extend to database management with a strong command of MySQL and Excel. I have hands-on experience in both manual and automated software testing, utilizing advanced tools like VSCode, GitHub, Jira, and Selenium. During my internships in web development, I contributed to projects from inception to completion and designed comprehensive test scenarios and cases. I hold certifications in C++ programming, frontend development, and AWS architecture, and I am recognized as a 5-star coder on HackerRank. Committed to continuous learning and professional growth, I am eager to contribute to the success of a forward-thinking organization and gain invaluable industry experience.
+        </p>
+</body>
+</html>

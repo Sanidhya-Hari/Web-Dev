@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        background-color: aqua;
+        color: red;
+      }
+      .boxes{
+        display: flex;
+      }
+      .box{
+        height: 150px;
+        width: 150px;
+        margin: 5px;
+        border: 5px;
+        padding: 5px;
+        background-color: rgb(35, 251, 67);
+      }
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: yellow;
+          color: brown;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+        .box{
+          height: 150px;
+          width: 150px;
+          margin: 5px;
+          border: 5px;
+          padding: 5px;
+          background-color: blueviolet;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate tempore
+    maiores optio accusantium nam, odio, natus voluptatum quisquam mollitia
+    ducimus, nisi dicta illo.
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minus
+        dicta animi?
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minus
+        dicta animi?
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minus
+        dicta animi?
+      </div>
+    </div>
+  </body>
+</html>
