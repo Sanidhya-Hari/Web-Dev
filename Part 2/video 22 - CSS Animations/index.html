@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+  </head>
+  <style>
+    .container {
+      background-color: aqua;
+      width: 70vw;
+      height: 80vh;
+    }
+    .box {
+      background-color: plum;
+      width: 20vw;
+      height: 40vh;
+      /*animation-name: anime;
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      animation-direction: alternate-reverse;
+      animation-play-state: paused;*/
+      animation: anime 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite 2s
+          alternate-reverse,
+        anime2 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2 2s
+          alternate-reverse;
+    }
+
+    @keyframes anime {
+      from {
+        background-color: blueviolet;
+      }
+      to {
+        transform: translateX(500px);
+        background-color: blue;
+      }
+    }
+
+    @keyframes anime2 {
+      0% {
+        transform: rotate(120deg);
+      }
+      25% {
+        transform: rotate(20deg);
+      }
+      50% {
+        transform: rotate(220deg);
+      }
+      100% {
+        transform: rotate(320deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">BOX</div>
+    </div>
+  </body>
+</html>
