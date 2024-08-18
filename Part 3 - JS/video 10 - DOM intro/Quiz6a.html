@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM BOM and Windows</title>
+  </head>
+  <style>
+    .box {
+      height: 50px;
+      width: 40px;
+      border: 2px solid red;
+      margin: 5px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <script>
+      function checkDrivingEligibility() {
+        let age = prompt("Please enter your age:");
+
+        if (age !== null && age.trim() !== "" && !isNaN(age)) {
+          age = Number(age);
+
+          if (age >= 18) {
+            alert("You are old enough to drive.");
+          } else {
+            alert("You are not old enough to drive.");
+          }
+        } else {
+          console.error("Invalid input. Please enter a valid age.");
+          alert("Please enter a valid age.");
+        }
+
+        if (confirm("Do you want to check another age?")) {
+          checkDrivingEligibility();
+        } else {
+          alert("Thank you! Goodbye.");
+        }
+      }
+
+      // Start the process
+      checkDrivingEligibility();
+    </script>
+  </body>
+</html>

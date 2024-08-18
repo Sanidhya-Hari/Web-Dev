@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar - Color change</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      background-color: grey;
+      display: flex;
+      color: white;
+    }
+
+    ul li {
+      list-style: none;
+      padding: 20px;
+      margin: 5px;
+    }
+    &ul li:hover {
+      cursor: pointer;
+      background-color: black;
+      border: 5px solid;
+      border-radius: 5px;
+    }
+
+    .box{
+      height: 45px;
+      width: 45px;
+      border: 2px solid ;
+      margin: 5px;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Services</li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <table border="4">
+      <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+      </tr>
+      <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+      </tr>
+  </table>
+
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
